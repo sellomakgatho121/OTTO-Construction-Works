@@ -12,9 +12,9 @@
 /* --- Custom Properties --- */
 :root {
   /* Primary palette */
-  --color-primary: #0E1214;
-  --color-primary-light: #1A1E20;
-  --color-primary-lighter: #252A2D;
+  --color-primary: #222426;
+  --color-primary-light: #292C2F;
+  --color-primary-lighter: #323639;
 
   /* Gold accent */
   --color-accent: #B18738;
@@ -242,6 +242,20 @@ p:last-child { margin-bottom: 0; }
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  display: block;
+  height: 52px;
+  width: auto;
+  border-radius: var(--radius-sm);
+}
+
+.logo-text {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   font-weight: 700;
@@ -251,7 +265,7 @@ p:last-child { margin-bottom: 0; }
   line-height: 1;
 }
 
-.logo span {
+.logo-text span {
   color: var(--color-accent);
 }
 
